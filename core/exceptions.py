@@ -13,6 +13,7 @@ def template(data, code=500):
 
 
 UNKNOWN_ERROR = template([], code=500)
+KEY_NOT_FOUND = template([], code=404)
 
 
 class InvalidUsage(Exception):
@@ -32,4 +33,8 @@ class InvalidUsage(Exception):
     @classmethod
     def unknown_error(cls):
         return cls(**UNKNOWN_ERROR)
+
+    @classmethod
+    def key_not_found(cls):
+        return cls(**KEY_NOT_FOUND)
 

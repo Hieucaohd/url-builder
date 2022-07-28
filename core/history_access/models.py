@@ -1,6 +1,6 @@
 import mongoengine as me
 from datetime import datetime
-from core.url import models as url_models
+from core.param_handler import models as url_models
 
 
 class Browser(me.EmbeddedDocument):
@@ -30,7 +30,6 @@ class CPU(me.EmbeddedDocument):
 
 
 class HistoryAccessUrl(me.Document):
-    history_id = me.ObjectIdField(primary_key=True)
     url_id = me.ReferenceField(url_models.Url)
     ua = me.StringField(required=True)
     browser = me.EmbeddedDocument(Browser)
@@ -43,5 +42,3 @@ class HistoryAccessUrl(me.Document):
     meta = {
         "indexes": ['url_id']
     }
-
-

@@ -19,7 +19,7 @@ class ProdConfig(Config):
     DEBUG = False
     MONGODB_SETTINGS = [
         {
-            'db': os.environ.get('DB_NAME', 'prod.db'),
+            'db': os.environ.get('DB_NAME', 'prodDB'),
             'host': os.environ.get('DB_HOST', 'localhost'),
             'port': os.environ.get('DB_PORT', 27017),
             'alias': 'default'
@@ -32,11 +32,11 @@ class DevConfig(Config):
 
     ENV = 'dev'
     DEBUG = True
-    DB_NAME = 'dev.db'
+    DB_NAME = 'devDB'
     DB_PATH = None
     MONGODB_SETTINGS = [
         {
-            'db': 'dev.db',
+            'db': 'devDB',
             'host': 'localhost',
             'port': 27017,
             'alias': 'default'
@@ -52,7 +52,7 @@ class TestConfig(Config):
     DEBUG = True
     MONGODB_SETTINGS = [
         {
-            'db': 'test.db',
+            'db': 'testDB',
             'host': 'localhost',
             'port': 27017,
             'alias': 'default'

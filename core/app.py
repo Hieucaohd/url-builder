@@ -5,6 +5,10 @@ from core.extensions import cache, cors
 from core.settings import ProdConfig
 from core.exceptions import InvalidUsage
 
+from flask_mongoengine import MongoEngine
+
+from core import param_handler
+
 
 def create_app(config_object=ProdConfig):
     """An application factory."""
@@ -14,7 +18,11 @@ def create_app(config_object=ProdConfig):
     app.config.from_object(config_object)
 
     register_extensions(app)
+    register_blueprints(app)
     register_error_handlers(app)
+
+    db = MongoEngine()
+    db.init_app(app)
     return app
 
 
@@ -23,6 +31,13 @@ def register_extensions(app):
 
     cache.init_app(app)
     cors.init_app(app)
+
+
+def register_blueprints(app: Flask):
+    origins = app.config.get('CORS_ORIGIN_WHITELIST', '*')
+    cors.init_app(param_handler.views.blueprint, origins=origins)
+
+    app.register_blueprint(param_handler.views.blueprint)
 
 
 def register_error_handlers(app: Flask):
