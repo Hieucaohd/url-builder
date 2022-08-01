@@ -1,29 +1,36 @@
+from mongo.base_model import BaseMongoDB
 
 
 class BaseService(object):
-    model = None
+    model: BaseMongoDB
 
-    def get_instance_by_id(self, instance_id):
-        instance = self.get_instance(id=instance_id)
+    def get_many_instances(self, query, obj_project, page, per_page):
+        instances = self.model.objects.find_by_query(query, obj_project, page, per_page)
+        return instances
+
+    def get_instance(self, query):
+        instance = self.model.objects.find_one(query)
         return instance
 
     def create_instance(self, **kwargs):
-        new_instance = self.model(**kwargs)
-        return new_instance.save()
+        inserted_id = self.model.objects.insert_one(kwargs)
+        return kwargs
 
-    def bulk_create_instance(self, **kwargs):
-        pass
-
-    def get_instance(self, **kwargs):
-        instance = self.model.objects(**kwargs).first()
-        return instance
-
-    def get_many_instances(self, limit=10, skip=0, order_by="", **kwargs):
-        instances = self.model.objects(**kwargs).limit(limit).skip(skip).order_by(order_by)
-        return instances
+    def bulk_create_instances(self, data_list, ignore_invalid_data=True):
+        inserted_ids = self.model.objects.bulk_inserts(data_list)
+        return inserted_ids
 
     def update_instance(self, **kwargs):
         pass
 
     def update_many_instances(self, **kwargs):
         pass
+
+    def get_instance_by_id(self, instance_id, fields):
+        instance = self.model.objects.find_one({"_id": instance_id}, fields)
+        return instance
+
+
+
+
+

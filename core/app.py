@@ -5,9 +5,10 @@ from core.extensions import cache, cors
 from core.settings import ProdConfig
 from core.exceptions import InvalidUsage
 
-from flask_mongoengine import MongoEngine
+from mongo.base_model import MongoDBInit
 
 from core import param_handler
+from core.param_handler.models import Key
 
 
 def create_app(config_object=ProdConfig):
@@ -18,11 +19,10 @@ def create_app(config_object=ProdConfig):
     app.config.from_object(config_object)
 
     register_extensions(app)
-    register_blueprints(app)
     register_error_handlers(app)
+    register_blueprints(app)
 
-    db = MongoEngine()
-    db.init_app(app)
+    MongoDBInit.init_app(app)
     return app
 
 

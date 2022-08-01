@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b4570431-ded4-47ec-add7-454fbcc98a2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/url-tracking.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/base/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/base_meta_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/index/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/index/global_indexes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/index/parse_indexes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/query_set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/setup_collection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/location_args_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/url-builder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/base/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/history_access/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/history_access/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_handler/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/param_handler/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_handler/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/param_handler/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_handler/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/param_handler/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_handler/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/param_handler/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CYV4jrv378Sn8iWYxpvjzbRG9i" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hieucaohd/code/python/test-pymongo&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mongo/index" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/core/utils" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4570431-ded4-47ec-add7-454fbcc98a2c" name="Changes" comment="" />
+      <created>1658979315230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658979315230</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

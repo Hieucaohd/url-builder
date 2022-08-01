@@ -1,0 +1,8 @@
+flask
+flask-mongoengine
+flask-caching
+flask-cors
+marshmallow
+marshmallow-mongoengine
+flask-apispec
+pymongo

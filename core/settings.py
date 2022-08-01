@@ -1,5 +1,8 @@
 """Application configuration."""
 import os
+"""
+mongodb+srv://hieucao192:helloworld123@authenticationtest.6lh8w.mongodb.net/?retryWrites=true&w=majority
+"""
 
 
 class Config(object):
@@ -17,14 +20,10 @@ class ProdConfig(Config):
 
     ENV = 'prod'
     DEBUG = False
-    MONGODB_SETTINGS = [
-        {
-            'db': os.environ.get('DB_NAME', 'prodDB'),
-            'host': os.environ.get('DB_HOST', 'localhost'),
-            'port': os.environ.get('DB_PORT', 27017),
-            'alias': 'default'
-        }
-    ]
+    MONGO_DB_SETTINGS = {
+        "MONGO_URI": os.environ.get("MONGO_URL", "mongodb://localhost:27017"),
+        "DB_NAME": os.environ.get("DB_NAME", "prodDB")
+    }
 
 
 class DevConfig(Config):
@@ -34,14 +33,10 @@ class DevConfig(Config):
     DEBUG = True
     DB_NAME = 'devDB'
     DB_PATH = None
-    MONGODB_SETTINGS = [
-        {
-            'db': 'devDB',
-            'host': 'localhost',
-            'port': 27017,
-            'alias': 'default'
-        }
-    ]
+    MONGO_DB_SETTINGS = {
+        "MONGO_URI": os.environ.get("MONGO_URL", "mongodb://localhost:27017"),
+        "DB_NAME": os.environ.get("DB_NAME", "devDB")
+    }
     CACHE_TYPE = 'simple'   # Can be "memcached", "redis", etc
 
 
@@ -50,11 +45,7 @@ class TestConfig(Config):
 
     TESTING = True
     DEBUG = True
-    MONGODB_SETTINGS = [
-        {
-            'db': 'testDB',
-            'host': 'localhost',
-            'port': 27017,
-            'alias': 'default'
-        }
-    ]
+    MONGO_DB_SETTINGS = {
+        "MONGO_URI": os.environ.get("MONGO_URL", "mongodb://localhost:27017"),
+        "DB_NAME": os.environ.get("DB_NAME", "testDB")
+    }

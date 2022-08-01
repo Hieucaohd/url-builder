@@ -1,4 +1,5 @@
 from flask import  jsonify
+import copy
 
 
 def template(data, code=500):
@@ -13,7 +14,8 @@ def template(data, code=500):
 
 
 UNKNOWN_ERROR = template([], code=500)
-KEY_NOT_FOUND = template([], code=404)
+PARAM_KEY_NOT_FOUND_ERROR = template([], code=404)
+PARAM_KEY_DUPLICATE_ERROR = template([], code=400)
 
 
 class InvalidUsage(Exception):
@@ -35,6 +37,15 @@ class InvalidUsage(Exception):
         return cls(**UNKNOWN_ERROR)
 
     @classmethod
-    def key_not_found(cls):
-        return cls(**KEY_NOT_FOUND)
+    def param_key_not_found(cls):
+        return cls(**PARAM_KEY_NOT_FOUND_ERROR)
+
+    @classmethod
+    def param_key_duplicate_error(cls, keys_exist=None):
+        if keys_exist:
+            body = dict(key_duplicate_error=keys_exist)
+            error_message = template(body, 400)
+            return cls(**error_message)
+        else:
+            return cls(**PARAM_KEY_DUPLICATE_ERROR)
 
