@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4570431-ded4-47ec-add7-454fbcc98a2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/base/response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/history_access/access_url_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/history_access/consumer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/history_access/kafka_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/history_access/producer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/param/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/param/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/param/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/param_key/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/param_key/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/param_key/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/param_key/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/param_key/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/url/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/url/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/url/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/url/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/url/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_consumer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-docs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/docs_register.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/objectID_convert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/base/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/base/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/history_access/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/history_access/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/history_access/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/history_access/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/history_access/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/history_access/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/history_access/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/history_access/services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/history_access/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/history_access/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/param_handler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/param_handler/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/param/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/param_handler/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/param/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/param_handler/services.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/param_handler/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo/index/parse_indexes.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/index/parse_indexes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo/query_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/query_set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
