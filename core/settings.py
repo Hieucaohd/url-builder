@@ -2,10 +2,6 @@
 import os
 from apispec import APISpec
 from apispec.ext.marshmallow import MarshmallowPlugin
-from apispec_webframeworks.flask import FlaskPlugin
-"""
-mongodb+srv://hieucao192:helloworld123@authenticationtest.6lh8w.mongodb.net/?retryWrites=true&w=majority
-"""
 
 
 class Config(object):
