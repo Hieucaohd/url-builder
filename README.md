@@ -14,4 +14,5 @@
    > flask run
 3) Run consumer:
    - Make sure, you have kafka server running on *localhost:9092*
+   - In another process, run:
    > python3 run_consumer.py
