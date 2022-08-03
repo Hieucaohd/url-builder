@@ -1,4 +1,4 @@
-from marshmallow import pre_load, pre_dump, post_dump, Schema
+from marshmallow import pre_load, pre_dump, post_dump, Schema, post_load, fields
 
 
 class BaseSchema(Schema):
@@ -11,13 +11,31 @@ class BaseSchema(Schema):
 
     @pre_load(pass_many=True)
     def unwrap_envelope(self, data, many, **kwargs):
+        # print(f"pre_load_data_get={data}")
         key = self.get_envelope_key(many)
-        return data[key]
+
+        try:
+            return data[key]
+        except KeyError as e:
+            print("error format or from swagger-ui")
+            return data
+        except Exception as e:
+            return data
 
     @post_dump(pass_many=True)
     def wrap_with_envelope(self, data, many, **kwargs):
+        # print(f"post_dump_data_get={data}")
         key = self.get_envelope_key(many)
         return {
             key: data
         }
 
+
+class DeleteResponseSchema(Schema):
+    success = fields.Boolean()
+
+    def convert_response(self, data, **kwargs):
+        pass
+
+
+delete_response_schema = DeleteResponseSchema()

@@ -1,4 +1,5 @@
 from copy import copy
+from pymongo import ReturnDocument
 
 
 class QuerySet(object):
@@ -26,15 +27,11 @@ class QuerySet(object):
 
     def insert_one(self, data):
         d = copy(data)  # make sure that data not be modified after this function
-        try:
-            inserted_id = self.conn_primary.insert_one(d).inserted_id
-            return inserted_id
-        except Exception as ex:
-            print("{} insert: {}".format(self.collection, ex))
-            return None
+        inserted_id = self.conn_primary.insert_one(d).inserted_id
+        return inserted_id
 
     def update_many(self, query, data):
-        return self.conn_primary.update_many(query, {"$set": data}).modified_count
+        return self.conn_primary.update_many(query, {"$set": data})
 
     def update_one(self, query, data):
         return self.conn_primary.update_one(query, {"$set": data}).matched_count
@@ -42,8 +39,12 @@ class QuerySet(object):
     def update_one_manual(self, query, data):
         return self.conn_primary.update_one(query, data).matched_count
 
+    def find_one_and_update(self, query, data, return_document=ReturnDocument.BEFORE, upsert=False):
+        updated_instance = self.conn_primary.find_one_and_update(query, {"$set": data}, return_document=return_document, upsert=upsert)
+        return updated_instance
+
     def bulk_inserts(self, data):
-        return self.conn_primary.insert_many(data).inserted_ids
+        return self.conn_primary.insert_many(data, ordered=True).inserted_ids
 
     def bulk_write(self, list_data):
         return self.conn_primary.bulk_write(list_data).acknowledged

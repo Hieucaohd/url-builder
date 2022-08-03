@@ -1,10 +1,12 @@
 from mongo.base_model import BaseMongoDB
 
 
-class HistoryAccess(BaseMongoDB):
+class Url(BaseMongoDB):
     meta = {
         'indexes': [
-            '+url_id'
+            {
+                "fields": ["+param"]
+            }
         ],
         'auto_timestamp': True
     }

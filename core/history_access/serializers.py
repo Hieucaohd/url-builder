@@ -1,7 +1,5 @@
 from marshmallow import Schema, fields
 from core.base.serializer import BaseSchema
-from core.param_handler.serializers import UrlSchema
-from datetime import datetime
 
 
 class BrowserSchema(Schema):
@@ -21,25 +19,27 @@ class OsSchema(Schema):
 
 
 class DeviceSchema(Schema):
-    model = fields.Str()
-    type = fields.Str()
-    vendor = fields.Str()
+    model = fields.Str(required=False)
+    type = fields.Str(required=False)
+    vendor = fields.Str(required=False)
 
 
 class CPUSchema(Schema):
     architecture = fields.Str()
 
 
-class HistoryAccessUrlSchema(BaseSchema):
-    id = fields.UUID(dump_only=True)
-    url = fields.Nested(UrlSchema)
-    ua = fields.Str(required=True)
-    browser = fields.Nested(BrowserSchema)
+class HistoryAccessUrlSchema(Schema):
+    __envelope_key__ = {'single': 'history_access'}
+
+    _id = fields.UUID(dump_only=True)
+    url_id = fields.Str()
+    ua = fields.Str()
+    browser = fields.Nested(BrowserSchema, required=False)
     engine = fields.Nested(EngineSchema)
     os = fields.Nested(OsSchema)
-    device = fields.Nested(DeviceSchema)
+    device = fields.Nested(DeviceSchema, required=False)
     cpu = fields.Nested(CPUSchema)
-    accessed_time = fields.DateTime(default=datetime.utcnow())
+    accessed_time = fields.DateTime()
 
 
 history_access_schema = HistoryAccessUrlSchema()

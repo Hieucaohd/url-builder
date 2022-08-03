@@ -19,7 +19,7 @@ def parse_index_string_config(index_string_config):
 def parse_index_config(index_config_raw):
 
     if type(index_config_raw) == str:
-        result = IndexModel(keys=[parse_index_string_config(index_config_raw)], unique=True, background=True)
+        result = IndexModel(keys=[parse_index_string_config(index_config_raw)], unique=False, background=True)
         return result
     elif type(index_config_raw) == dict:
         assert 'fields' in index_config_raw, f"compound index {index_config_raw} must have fields"

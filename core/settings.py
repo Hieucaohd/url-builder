@@ -1,5 +1,8 @@
 """Application configuration."""
 import os
+from apispec import APISpec
+from apispec.ext.marshmallow import MarshmallowPlugin
+from apispec_webframeworks.flask import FlaskPlugin
 """
 mongodb+srv://hieucao192:helloworld123@authenticationtest.6lh8w.mongodb.net/?retryWrites=true&w=majority
 """
@@ -37,6 +40,16 @@ class DevConfig(Config):
         "MONGO_URI": os.environ.get("MONGO_URL", "mongodb://localhost:27017"),
         "DB_NAME": os.environ.get("DB_NAME", "devDB")
     }
+
+    APISPEC_SPEC = APISpec(
+        title='url-builder-docs',
+        version='v1',
+        plugins=[MarshmallowPlugin()],
+        openapi_version='2.0'
+    )
+    APISPEC_SWAGGER_URL = '/docs-json'
+    APISPEC_SWAGGER_UI_URL = '/docs'
+
     CACHE_TYPE = 'simple'   # Can be "memcached", "redis", etc
 
 
