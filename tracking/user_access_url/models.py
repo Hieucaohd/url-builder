@@ -5,7 +5,10 @@ class HistoryAccess(BaseMongoDB):
     meta = {
         'indexes': [
             '+url_id',
-            '-created_time'
+            '-created_time',
+            '-tracked',
+            '-date_string'
         ],
         'auto_timestamp': True
     }
+

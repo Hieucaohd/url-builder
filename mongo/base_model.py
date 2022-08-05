@@ -3,15 +3,11 @@ from mongo.index_collection.parse_indexes import create_mongo_indexes
 from .base_meta_model import BaseMetaModel
 
 from .query_set import QuerySet
+from pymongo.collection import Collection
 
 
 class BaseMongoDB(object, metaclass=BaseMetaModel):
-
-    @classmethod
-    def setup_collection(cls):
-        cls.collection = MongoDBInit.get_db()[cls.COLLECTION_NAME]
-        cls.objects = QuerySet(cls.collection)
-        cls.create_indexes()
+    collection: Collection = None
 
     @classmethod
     def create_indexes(cls, indexes=None):
@@ -20,6 +16,7 @@ class BaseMongoDB(object, metaclass=BaseMetaModel):
             indexes = cls.meta.get('indexes', None)
 
         if indexes is None:
+            print(f"No indexes provided for {cls.COLLECTION_NAME}, skip create index.")
             return
 
         create_mongo_indexes(cls.collection, indexes)
