@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4570431-ded4-47ec-add7-454fbcc98a2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/report/report_url_access/controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_job_schedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo/base_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/base_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/history_access_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/history_access_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/report_after_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/report_after_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/report_when_server_restart.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/report_when_server_restart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_schedule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/user_access_url/access_url_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/user_access_url/access_url_event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/user_access_url/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/user_access_url/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
