@@ -2,10 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4570431-ded4-47ec-add7-454fbcc98a2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/common/constant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo/index_collection/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report_url_access/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report_url_access/history_access_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report_url_access/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report_url_access/report_after_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report_url_access/report_when_server_restart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report_url_access/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report_url_access/services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_schedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/user_access_url/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/user_access_url/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/user_access_url/services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/autoapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/base/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/base/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/base/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/history_access/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/access_url_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/user_access_url/access_url_event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/user_access_url/consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/kafka_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/history_access/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/producer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/history_access/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/history_access/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/history_access/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/history_access/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_key/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param_key/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_key/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param_key/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_key/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param_key/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_key/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param_key/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/param_key/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/param_key/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/url/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/url/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/url/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/url/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/url/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/url/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/url/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/url/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/url/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/url/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/base_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/base_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/index/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/index/global_indexes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/index/parse_indexes.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/index_collection/parse_indexes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/setup_collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/setup_collection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_consumer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,27 +86,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/hieucaohd/code/saleor",
-    "settings.editor.selected.configurable": "project.propDebugger"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hieucaohd/code/url-tracking&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tracking/user_access_url" />
       <recent name="$PROJECT_DIR$/core/url" />
       <recent name="$PROJECT_DIR$/core/param_value" />
       <recent name="$PROJECT_DIR$/core/param_key" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/tracking/user_access_url" />
+      <recent name="$PROJECT_DIR$/report" />
       <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$/core/param_handler" />
-      <recent name="$PROJECT_DIR$/core/param_handler/views" />
-      <recent name="$PROJECT_DIR$/mongo/index" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

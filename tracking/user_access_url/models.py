@@ -1,0 +1,11 @@
+from mongo.base_model import BaseMongoDB
+
+
+class HistoryAccess(BaseMongoDB):
+    meta = {
+        'indexes': [
+            '+url_id',
+            '-created_time'
+        ],
+        'auto_timestamp': True
+    }

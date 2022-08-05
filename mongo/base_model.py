@@ -1,5 +1,5 @@
 from mongo import MongoDBInit
-from mongo.index.parse_indexes import create_mongo_indexes
+from mongo.index_collection.parse_indexes import create_mongo_indexes
 from .base_meta_model import BaseMetaModel
 
 from .query_set import QuerySet
@@ -23,6 +23,7 @@ class BaseMongoDB(object, metaclass=BaseMetaModel):
             return
 
         create_mongo_indexes(cls.collection, indexes)
+        print(f"Collection {cls.COLLECTION_NAME}: successfully create index: {indexes}")
 
 
 

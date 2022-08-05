@@ -41,14 +41,17 @@ class MongoDBInit(object):
         setup_collection_model()
 
     @staticmethod
-    def get_db(db_name=None):
+    def get_db(db_name=None, mongo_uri=None):
         assert global_mongodb_client is not None, "You must call MongoDBInit.init_app(app) or " \
                                                   "MongoDBInit.init_client first"
         if db_name is None:
             assert mongo_config is not None, "no config provided."
             db_name = mongo_config["DB_NAME"]
 
-        return global_mongodb_client[db_name]
+        if mongo_uri is None:
+            return global_mongodb_client[db_name]
+
+        return MongoClient(mongo_uri, connect=False)[db_name]
 
     @staticmethod
     def get_mongo_db_client():
