@@ -1,7 +1,7 @@
 from mongo.base_model import BaseMongoDB
 
 
-class ReportUrlAccessPerDay(BaseMongoDB):
+class ReportUrlAccessPerDayTest(BaseMongoDB):
     meta = {
         'indexes': [
             '-date_string',
@@ -14,7 +14,7 @@ class ReportUrlAccessPerDay(BaseMongoDB):
     }
 
 
-class LastTimeTracked(BaseMongoDB):
+class LastTimeTrackedTest(BaseMongoDB):
     meta = {
         'indexes': [
             '-last_time_tracked_field'
@@ -25,7 +25,7 @@ class LastTimeTracked(BaseMongoDB):
     time_scan_field = 'time_scan_field'
 
 
-class LastTimeServerStart(BaseMongoDB):
+class LastTimeServerStartTest(BaseMongoDB):
     meta = {
         'indexes': [
             '-last_time_server_start_field'

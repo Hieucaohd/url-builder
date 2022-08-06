@@ -15,7 +15,7 @@ def report_urls_accessed_while_server_stop():
 
     last_time_tracked_of_previous_start_session = Controller.get_last_time_tracked_of_previous_start_session()
 
-    Controller.save_time_tracked(time_start)
+    Controller.save_time_tracked_and_time_scan(time_start, None)
 
     urls_accessed = get_urls_access_between(time_start, last_time_tracked_of_previous_start_session)
     report_url_access_per_day_service.update_urls_access_count(urls_accessed)

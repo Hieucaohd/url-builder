@@ -15,5 +15,6 @@ class BaseMetaModel(type):
         collection_name = created_class.__name__.lower()
         created_class.COLLECTION_NAME = collection_name
 
-        register_collection(created_class)
+        if collection_name != 'basemongodb':
+            register_collection(created_class)
         return created_class
