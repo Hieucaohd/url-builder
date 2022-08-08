@@ -11,6 +11,8 @@ import api.param_key
 import api.param
 import api.url
 import api.history_access
+import api.report_per_day
+import api.test_performance
 from flask_apispec import FlaskApiSpec
 
 
@@ -44,6 +46,7 @@ def register_blueprint_for_docs(docs: FlaskApiSpec):
     api.param_key.views.register_docs(docs)
     api.history_access.views.register_docs(docs)
     api.param.views.register_docs(docs)
+    api.report_per_day.views.register_docs(docs)
 
 
 def register_blueprints(app: Flask):
@@ -53,11 +56,15 @@ def register_blueprints(app: Flask):
     cors.init_app(api.url.views.blueprint, origins=origins)
     cors.init_app(api.param.views.blueprint, origins=origins)
     cors.init_app(api.history_access.views.blueprint, origins=origins)
+    cors.init_app(api.report_per_day.views.blueprint, origins=origins)
+    cors.init_app(api.test_performance.views.blueprint, origins=origins)
 
     app.register_blueprint(api.param_key.views.blueprint)
     app.register_blueprint(api.url.views.blueprint)
     app.register_blueprint(api.param.views.blueprint)
     app.register_blueprint(api.history_access.views.blueprint)
+    app.register_blueprint(api.report_per_day.views.blueprint)
+    app.register_blueprint(api.test_performance.views.blueprint)
 
 
 def register_error_handlers(app: Flask):

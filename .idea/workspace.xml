@@ -2,25 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4570431-ded4-47ec-add7-454fbcc98a2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/report/report_url_access_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report_url_access_test/controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report_url_access_test/history_access_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report_url_access_test/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report_url_access_test/report_after_time.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report_url_access_test/report_when_server_restart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report_url_access_test/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report_url_access_test/services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/report_per_day/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/report_per_day/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/report_per_day/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/report_per_day/services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/report_per_day/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/test_performance/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/test_performance/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/test_performance/services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/test_performance/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locust_testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locust_testing/url_building_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/url-tracking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/url-tracking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo/base_meta_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/base_meta_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report_url_access/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/history_access_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/history_access_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/report_after_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/report_after_time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report_url_access/report_when_server_restart.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/report_when_server_restart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access_test/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access_test/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/report_after_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access_test/report_after_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/report_when_server_restart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_job_schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_job_schedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/user_access_url/access_url_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/user_access_url/access_url_event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/user_access_url/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/user_access_url/services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +53,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/hieucaohd/code/url-tracking/report/report_url_access_test",
-    "settings.editor.selected.configurable": "project.propDebugger"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hieucaohd/code/url-tracking/report/report_url_access_test&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
   }
-}]]></component>
+}</component>
   <component name="PyFindUsagesOptions">
     <option name="isSearchForTextOccurrences" value="true" />
   </component>

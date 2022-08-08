@@ -8,8 +8,8 @@ import sys
 
 class Controller(object):
     DEFAULT_TIME_SCAN = int(timedelta(seconds=60*2).total_seconds())    # seconds
-    TIME_SCAN_MAX = int(timedelta(seconds=3*60).total_seconds())
-    assert DEFAULT_TIME_SCAN <= TIME_SCAN_MAX, "DEFAULT_TIME_SCAN > TIME_SCAN_MAX"
+    TIME_SCAN_MAX = int(timedelta(days=360).total_seconds())
+    assert DEFAULT_TIME_SCAN <= TIME_SCAN_MAX, "ERROR: DEFAULT_TIME_SCAN > TIME_SCAN_MAX"
 
     DEFAULT_TIME_BETWEEN_JOB = int(timedelta(seconds=3).total_seconds())     # seconds
     # If this class variable is not None, time_between_job will use this variable
@@ -67,7 +67,7 @@ class Controller(object):
         return last_time_tracked.get(LastTimeTrackedTest.last_time_tracked_field, cls.DEFAULT_LAST_TIME_TRACKED)
 
     @classmethod
-    def get_last_time_server_start(cls) -> datetime:
+    def get_previous_time_server_start(cls) -> datetime:
         result = LastTimeServerStartTest.collection.\
             find({
                 LastTimeServerStartTest.last_time_server_start_field: {"$lt": cls.TIME_CREATE_CONTROLLER_CLASS}
@@ -125,7 +125,7 @@ class Controller(object):
     @classmethod
     def calculate_time_between_job(cls):
         """
-        Calculate time_between_job base on last_time_tracked of previous start session
+        Calculate time_between_job base on previous_time_tracked of previous start session
         """
         last_time_tracked_of_previous_start_session = cls.get_last_time_tracked_of_previous_start_session()
 
@@ -140,19 +140,18 @@ class Controller(object):
             time_between_job = time_between_job_of_previous_start_session / 2
             time_between_job = int(time_between_job.total_seconds())
 
-        if time_between_job == 0:
-            print("WARNING: server have crucial problem. Stop server to fix here")
-            sys.exit()
-
         if cls.FORCE_TIME_BETWEEN_JOB is not None:
             time_between_job = cls.FORCE_TIME_BETWEEN_JOB
 
-        cls.save_current_time_between_job(time_between_job)
+        if time_between_job == 0:
+            time_between_job = int(timedelta(seconds=1).total_seconds())
+
         return time_between_job
 
     @classmethod
     def create_job(cls):
         time_between_job = cls.calculate_time_between_job()
+        cls.save_current_time_between_job(time_between_job)
         from .report_after_time import report_urls_accessed_after
         return schedule.every(time_between_job).seconds.do(report_urls_accessed_after)
 

@@ -35,7 +35,7 @@ class MongoDBInit(object):
             mongo_config = copy.deepcopy(app.config["MONGO_DB_SETTINGS"])
 
         if global_mongodb_client is None:
-            global_mongodb_client = MongoClient(mongo_config["MONGO_URI"], connect=False)
+            global_mongodb_client = MongoClient(mongo_config["MONGO_URI"])
 
         from mongo.setup_collection import setup_collection_model
         setup_collection_model()

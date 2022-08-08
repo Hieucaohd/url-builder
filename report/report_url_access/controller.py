@@ -22,12 +22,18 @@ class Controller(object):
 
     @classmethod
     def save_time_tracked(cls, time_job_start):
+        """
+        Lưu thời gian bắt đầu thực hiện job vào db
+        """
         LastTimeTracked.collection.insert_one({
             LastTimeTracked.last_time_tracked_field: time_job_start
         })
 
     @classmethod
     def save_time_server_start_and_time_between_job(cls, time_server_start, time_between_job=None):
+        """
+        Mỗi khi server start thì lưu thời gian đấy vào db
+        """
         if time_between_job is None:
             time_between_job = cls.DEFAULT_TIME_BETWEEN_JOB
         LastTimeServerStart.collection.insert_one({
@@ -37,6 +43,9 @@ class Controller(object):
 
     @classmethod
     def get_last_time_tracked(cls) -> datetime:
+        """
+        lấy trời gian bắt đầu job lần trước
+        """
         result = LastTimeTracked.collection.\
             find({}, limit=1).\
             sort([
@@ -50,6 +59,9 @@ class Controller(object):
 
     @classmethod
     def get_last_time_tracked_of_previous_start_session(cls) -> datetime:
+        """
+        Lấy mốc thời gian cuối cùng quét của lần start trước của server
+        """
         find_result = LastTimeTracked.collection. \
             find({
                 LastTimeTracked.last_time_tracked_field: {"$lt": cls.TIME_CREATE_CONTROLLER_CLASS}
@@ -65,6 +77,9 @@ class Controller(object):
 
     @classmethod
     def get_last_time_server_start(cls) -> datetime:
+        """
+        Lấy thời gian trước đó server start
+        """
         result = LastTimeServerStart.collection.\
             find({
                 LastTimeServerStart.last_time_server_start_field: {"$lt": cls.TIME_CREATE_CONTROLLER_CLASS}
@@ -80,6 +95,9 @@ class Controller(object):
 
     @classmethod
     def get_time_between_job_of_previous_start_session(cls):
+        """
+        Lấy thời gian between job của lần start server trước đó
+        """
         result = LastTimeServerStart.collection. \
             find({
                 LastTimeServerStart.last_time_server_start_field: {"$lt": cls.TIME_CREATE_CONTROLLER_CLASS}
@@ -95,6 +113,9 @@ class Controller(object):
 
     @classmethod
     def save_current_time_between_job(cls, time_between_job):
+        """
+        Lưu thời gian between job của lần start server hiện tại
+        """
         LastTimeServerStart.collection.update_one(
             {
                 LastTimeServerStart.last_time_server_start_field: {"$gte": cls.TIME_CREATE_CONTROLLER_CLASS}
@@ -109,7 +130,7 @@ class Controller(object):
     @classmethod
     def calculate_time_between_job(cls):
         """
-        Calculate time_between_job base on last_time_tracked of previous start session
+        Tính toán thời gian between job dựa vào mốc thời gian quét cuối cùng trước đó của lần start server trước
         """
         last_time_tracked_of_previous_start_session = cls.get_last_time_tracked_of_previous_start_session()
 

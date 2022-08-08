@@ -1,7 +1,5 @@
 from datetime import datetime, timedelta
-
 import pymongo
-
 from .history_access_service import get_urls_access_between
 from .controller import Controller
 from .services import report_url_access_per_day_service
@@ -9,7 +7,7 @@ from .services import report_url_access_per_day_service
 
 def report_urls_accessed_while_server_stop():
     """
-    TODO: if (time_start - last_time_tracked) too much large, let scale this function
+    TODO: if (time_start - previous_time_tracked) too much large, let scale this function
     """
     time_start = datetime.utcnow()
 
