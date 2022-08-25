@@ -129,3 +129,4 @@ mongodbdata
 swagger-docs.json
 venv
 .idea
+locust_testing
