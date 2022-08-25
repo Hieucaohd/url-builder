@@ -17,7 +17,6 @@ def access_url_receive_consumer():
 
         user_agent_data['url_id'] = convert_to_object_id(url_id)
         user_agent_data['date_string'] = datetime.now().date().strftime(DATE_FORMAT_STRING)
-        # user_agent_data['date_string'] = '2022/08/05'
 
         result = history_access_service.insert_one(user_agent_data)
 

@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4570431-ded4-47ec-add7-454fbcc98a2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/report_per_day/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/report_per_day/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/report_per_day/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/report_per_day/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/report_per_day/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/test_performance/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/test_performance/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/test_performance/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/test_performance/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locust_testing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locust_testing/url_building_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/url-tracking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/url-tracking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access/report_when_server_restart.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access/report_when_server_restart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access_test/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access_test/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/report_after_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_url_access_test/report_after_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/report_when_server_restart.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_url_access_test/serializers.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_job_schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_job_schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/user_access_url/access_url_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/user_access_url/access_url_event.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +32,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/hieucaohd/code/url-tracking/report/report_url_access_test&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="PyFindUsagesOptions">
     <option name="isSearchForTextOccurrences" value="true" />
   </component>
@@ -82,6 +57,9 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b4570431-ded4-47ec-add7-454fbcc98a2c" name="Changes" comment="" />
@@ -89,8 +67,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658979315230</updated>
+      <workItem from="1661436426203" duration="143000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -102,6 +84,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="257" y="48" width="1022" height="737" key="SettingsEditor" timestamp="1661436568108">
+      <screen x="0" y="27" width="1536" height="772" />
+    </state>
+    <state x="257" y="48" width="1022" height="737" key="SettingsEditor/0.27.1536.772@0.27.1536.772" timestamp="1661436568108" />
+    <state x="493" y="305" width="540" height="223" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1661436531766">
+      <screen x="0" y="27" width="1536" height="772" />
+    </state>
+    <state x="493" y="305" width="540" height="223" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1536.772@0.27.1536.772" timestamp="1661436531766" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

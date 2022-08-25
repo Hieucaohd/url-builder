@@ -1,3 +1,4 @@
 *.pyc
 mongodbdata
 swagger-docs.json
+venv
